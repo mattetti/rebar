@@ -1,5 +1,5 @@
 -module(funs).
--export([listen/0, add/2, cat/2, fac/1]).
+-export([listen/0, add/2, cat/2, fac/1, test/1]).
 
 listen() ->
   rebar:start().
@@ -17,3 +17,6 @@ fac(Memo, 0) ->
   Memo;
 fac(Memo, N) ->
   fac(Memo * N, N - 1).
+  
+test(A) ->
+  A.
